@@ -153,9 +153,9 @@ function Intro() {
             <PageLink href="/">izaacnoordhuis.dev</PageLink>
             <NavWrapper>
               <Navbar>
-                <NavbarLink href="">introduction</NavbarLink>
-                <NavbarLink href="">projects</NavbarLink>
-                <NavbarLink id="resume" href="">
+                <NavbarLink href="/">introduction</NavbarLink>
+                <NavbarLink href="/">projects</NavbarLink>
+                <NavbarLink id="resume" href="/">
                   resume
                 </NavbarLink>
               </Navbar>

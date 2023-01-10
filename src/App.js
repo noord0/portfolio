@@ -1,6 +1,6 @@
 import "./App.css";
 import Intro from "./sections/Intro";
-import Projects from "./sections/Projects";
+//import Projects from "./sections/Projects";
 
 function App() {
   return (

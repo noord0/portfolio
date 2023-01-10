@@ -59,7 +59,7 @@ function Projects() {
           <Image src="https://as2.ftcdn.net/v2/jpg/02/18/72/73/1000_F_218727336_yFWOEXi4dqc01tCWSNZg2JSa0TPHtz4h.jpg"></Image>
           <CardTitle>Title</CardTitle>
           <CardExtra>
-            <a href="">Show More</a>
+            <a href="/">Show More</a>
           </CardExtra>
         </Card>
         <Card>
@@ -69,7 +69,7 @@ function Projects() {
           ></Image>
           <CardTitle>Title</CardTitle>
           <CardExtra>
-            <a href="">Show More</a>
+            <a href="/">Show More</a>
           </CardExtra>
         </Card>
         <Card>
@@ -79,7 +79,7 @@ function Projects() {
           ></Image>
           <CardTitle>Title</CardTitle>
           <CardExtra>
-            <a href="">Show More</a>
+            <a href="/">Show More</a>
           </CardExtra>
         </Card>
       </CardGrid>
