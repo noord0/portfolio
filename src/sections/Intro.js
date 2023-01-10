@@ -18,7 +18,7 @@ const TitleWrapper = styled.div`
 `;
 const SubTitle = styled.div``;
 
-const ResumeButton = styled.button`
+const ResumeButton = styled.a`
   &:hover {
     cursor: pointer;
   }
@@ -28,6 +28,8 @@ const ResumeButton = styled.button`
   background-color: Transparent;
   border-radius: 5px;
   padding: 0.5rem 1rem;
+  text-decoration: none;
+  color: #fff;
 
   font-family: "Poppins", sans-serif;
 `;
@@ -129,6 +131,10 @@ const SocialIcon = styled.div`
 const PageWrapper = styled.div`
   position: relative;
   scroll-snap-align: start;
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
 `;
 
 const HeaderWrapper = styled.div`
@@ -153,9 +159,11 @@ function Intro() {
             <PageLink href="/">izaacnoordhuis.dev</PageLink>
             <NavWrapper>
               <Navbar>
-                <NavbarLink href="/">introduction</NavbarLink>
-                <NavbarLink href="/">projects</NavbarLink>
-                <NavbarLink id="resume" href="/">
+                <NavbarLink id="introduction" href="#introduction">
+                  introduction
+                </NavbarLink>
+                <NavbarLink href="#projects">projects</NavbarLink>
+                <NavbarLink id="resume" href="./resume.pdf">
                   resume
                 </NavbarLink>
               </Navbar>
@@ -198,14 +206,26 @@ function Intro() {
           ) : (
             <>
               <Resume>
-                <ResumeButton>resume</ResumeButton>
+                <ResumeButton href="./resume.pdf">resume</ResumeButton>
               </Resume>
               <Icons>
                 <Ic>
-                  <NewIcon path={mdiGithub} size="2rem"></NewIcon>
+                  <a
+                    href="https://github.com/noord0"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <NewIcon path={mdiGithub} size="2rem"></NewIcon>
+                  </a>
                 </Ic>
                 <Ic>
-                  <NewIcon path={mdiLinkedin} size="2rem"></NewIcon>
+                  <a
+                    href="https://www.linkedin.com/in/izaac-noordhuis-391020221/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <NewIcon path={mdiLinkedin} size="2rem"></NewIcon>
+                  </a>
                 </Ic>
               </Icons>
               <ProjectsButton>
