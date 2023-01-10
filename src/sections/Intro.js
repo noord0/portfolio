@@ -165,12 +165,17 @@ function Intro() {
                 <a
                   href="https://www.linkedin.com/in/izaac-noordhuis-391020221/"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   <NewIcon path={mdiLinkedin} size="2rem"></NewIcon>
                 </a>
               </SocialIcon>
               <SocialIcon>
-                <a href="https://github.com/noord0" target="_blank">
+                <a
+                  href="https://github.com/noord0"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <NewIcon path={mdiGithub} size="2rem"></NewIcon>
                 </a>
               </SocialIcon>
