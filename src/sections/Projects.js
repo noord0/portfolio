@@ -10,6 +10,10 @@ const ProjectsWrapper = styled.div`
   min-height: 100vh;
   scroll-snap-align: start;
   overflow: auto;
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
 `;
 
 const Title = styled.div`
@@ -28,6 +32,10 @@ const CardGrid = styled.div`
 
   @media (min-width: 600px) {
     width: 80%;
+  }
+  @media (max-width: 600px) {
+    padding-top: 5rem;
+    width: 400px;
   }
 `;
 
@@ -104,7 +112,11 @@ const image = require("../images/covid-19.png");
 function Projects() {
   return (
     <ProjectsWrapper>
-      <Title>Projects</Title>
+      <Title>
+        <a id="projects" href="#projects">
+          Projects
+        </a>
+      </Title>
       <CardGrid>
         <Card>
           <ImageWrapper>

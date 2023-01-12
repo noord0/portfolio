@@ -45,7 +45,7 @@ const Resume = styled.div`
   padding-bottom: 1rem;
 `;
 
-const ProjectsButton = styled.div`
+const ProjectsButton = styled.a`
   display: flex;
   align-items: center;
   &:hover {
@@ -156,12 +156,12 @@ function Intro() {
       {matches ? (
         <HeaderWrapper>
           <Header>
-            <PageLink href="/">izaacnoordhuis.dev</PageLink>
+            <PageLink href="/" id="introduction">
+              izaacnoordhuis.dev
+            </PageLink>
             <NavWrapper>
               <Navbar>
-                <NavbarLink id="introduction" href="#introduction">
-                  introduction
-                </NavbarLink>
+                <NavbarLink href="/">introduction</NavbarLink>
                 <NavbarLink href="#projects">projects</NavbarLink>
                 <NavbarLink id="resume" href="./resume.pdf">
                   resume
@@ -228,7 +228,7 @@ function Intro() {
                   </a>
                 </Ic>
               </Icons>
-              <ProjectsButton>
+              <ProjectsButton href="#projects">
                 projects <Icon path={mdiArrowDown} size="2rem"></Icon>
               </ProjectsButton>
             </>
